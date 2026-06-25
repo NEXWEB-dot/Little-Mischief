@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Little Mischief — Bold graphic tees for kids who dare to be different. Fun, expressive, and built for everyday adventures.">
+  <title>Little Mischief — Wear the Fun</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <!-- Announcement Bar -->
+    <div class="navbar__announcement">
+      Free Delivery on Orders Above PKR 3,500 &mdash; Use Code: MISCHIEF25
+    </div>
+
+    <div class="navbar__main">
+      <!-- Logo -->
+      <a href="#" class="navbar__logo" aria-label="Little Mischief home">
+        LITTLE <span>MISCHIEF</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="navbar__links">
+        <a href="#new-drops">New Drops</a>
+        <a href="#products">Collection</a>
+        <a href="#story">Our Story</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+
+      <!-- Actions -->
+      <div class="navbar__actions">
+        <!-- Search -->
+        <button aria-label="Search products" id="search-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Cart -->
+        <button aria-label="Shopping cart" id="cart-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 01-8 0"></path>
+          </svg>
+          <span class="cart-count">0</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <div class="navbar__hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu__close" id="mobile-menu-close" role="button" tabindex="0" aria-label="Close menu">&times;</div>
+    <a href="#new-drops">New Drops</a>
+    <a href="#products">Collection</a>
+    <a href="#story">Our Story</a>
+    <a href="#reviews">Reviews</a>
+  </div>
+
+  <!-- ======== HERO SECTION ======== -->
+  <section class="hero" id="hero">
+    <!-- Background decorative Urdu text -->
+    <div class="hero__bg-text" aria-hidden="true">شرارت</div>
+
+    <div class="hero__content">
+      <!-- Left: Copy -->
+      <div class="hero__left">
+        <div class="hero__badge reveal">
+          Summer '25 Collection
+        </div>
+
+        <h1 class="hero__title reveal reveal-delay-1">
+          Wear <span class="accent">The Fun</span>
+          <span class="outline-text">Out Loud</span>
+        </h1>
+
+        <p class="hero__desc reveal reveal-delay-2">
+          Bold graphic tees for kids who dare to be different. Designed in Lahore, made for everyday adventures and weekend chaos.
+        </p>
+
+        <div class="hero__cta-group reveal reveal-delay-3">
+          <a href="#products" class="btn btn-primary">
+            Shop Collection
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#story" class="btn btn-outline">Our Story</a>
+        </div>
+
+        <div class="hero__stats reveal reveal-delay-4">
+          <div class="hero__stat">
+            <span class="hero__stat-number">5K+</span>
+            <span class="hero__stat-label">Happy Kids</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">120+</span>
+            <span class="hero__stat-label">Unique Designs</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">4.9</span>
+            <span class="hero__stat-label">Avg Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Featured Image -->
+      <div class="hero__right">
+        <!-- Floating tags -->
+        <div class="hero__floating-tag">100% Cotton</div>
+        <div class="hero__floating-tag">Ages 2-14</div>
+
+        <div class="hero__image-frame">
+          <img src="images/WhatsApp Image 2026-06-25 at 4.10.20 PM.jpeg" alt="Little Mischief featured graphic tee — feeling unproducktive duck design" loading="eager">
+          <div class="hero__image-label">
+            <div class="hero__image-label-title">Lazy Duck Tee</div>
+            <div class="hero__image-label-price">PKR 1,850</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MARQUEE ======== -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <span>New Arrivals</span><div class="dot"></div>
+        <span>Graphic Tees</span><div class="dot"></div>
+        <span>Little Mischief</span><div class="dot"></div>
+        <span>Limited Drops</span><div class="dot"></div>
+        <span>Made in Pakistan</span><div class="dot"></div>
+        <span>Fun First</span><div class="dot"></div>
+        <span>Ages 2-14</span><div class="dot"></div>
+        <span>Premium Cotton</span><div class="dot"></div>
+      </div>
+      <!-- Duplicated for seamless loop -->
+      <div class="marquee-item">
+        <span>New Arrivals</span><div class="dot"></div>
+        <span>Graphic Tees</span><div class="dot"></div>
+        <span>Little Mischief</span><div class="dot"></div>
+        <span>Limited Drops</span><div class="dot"></div>
+        <span>Made in Pakistan</span><div class="dot"></div>
+        <span>Fun First</span><div class="dot"></div>
+        <span>Ages 2-14</span><div class="dot"></div>
+        <span>Premium Cotton</span><div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== PRODUCTS SECTION ======== -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header reveal">
+        <div class="section-header__left">
+          <div class="section-tag">// Curated Selection</div>
+          <h2 class="section-title">Fresh Off<br>The Press</h2>
+        </div>
+        <div class="section-header__right">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="bestseller">Bestsellers</button>
+          <button class="filter-btn" data-filter="new">New In</button>
+          <button class="filter-btn" data-filter="sale">On Sale</button>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card reveal" data-category="bestseller">
+          <div class="product-card__image">
+            <span class="product-card__badge">Bestseller</span>
+            <img src="images/WhatsApp Image 2026-06-25 at 4.10.20 PM.jpeg" alt="Lazy Duck Tee - Blue graphic tee with duck illustration" loading="lazy">
+            <div class="product-card__quick-add">Quick Add →</div>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__title">Lazy Duck Tee</div>
+            <div class="product-card__meta">
+              <span class="product-card__price">PKR 1,850</span>
+              <div class="product-card__colors">
+                <div class="product-card__color-dot" style="background:#4A7A9B"></div>
+                <div class="product-card__color-dot" style="background:#2C2C2C"></div>
+                <div class="product-card__color-dot" style="background:#F5F4F0"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card reveal reveal-delay-1" data-category="new">
+          <div class="product-card__image">
+            <span class="product-card__badge" style="background:#0A0A0A">New</span>
+            <img src="images/WhatsApp Image 2026-06-25 at 4.10.14 PM (1).jpeg" alt="Solar System Tee - Black tee with planet graphics" loading="lazy">
+            <div class="product-card__quick-add">Quick Add →</div>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__title">Solar System Tee</div>
+            <div class="product-card__meta">
+              <span class="product-card__price">PKR 1,650</span>
+              <div class="product-card__colors">
+                <div class="product-card__color-dot" style="background:#1A1A1A"></div>
+                <div class="product-card__color-dot" style="background:#1B3A4B"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card reveal reveal-delay-2" data-category="bestseller">
+          <div class="product-card__image">
+            <img src="images/WhatsApp Image 2026-06-25 at 4.10.15 PM (2).jpeg" alt="Wild Hearts Tee - Green tee with animal illustration" loading="lazy">
+            <div class="product-card__quick-add">Quick Add →</div>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__title">Wild Hearts Tee</div>
+            <div class="product-card__meta">
+              <span class="product-card__price">PKR 1,950</span>
+              <div class="product-card__colors">
+                <div class="product-card__color-dot" style="background:#1B4D3E"></div>
+                <div class="product-card__color-dot" style="background:#F5F4F0"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card reveal reveal-delay-3" data-category="sale">
+          <div class="product-card__image">
+            <span class="product-card__badge" style="background:#6B1E1E">-20%</span>
+            <img src="images/WhatsApp Image 2026-06-25 at 4.10.14 PM (3).jpeg" alt="Bunny Hop Tee - Purple tee with rabbit graphic" loading="lazy">
+            <div class="product-card__quick-add">Quick Add →</div>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__title">Bunny Hop Tee</div>
+            <div class="product-card__meta">
+              <span class="product-card__price">PKR 1,480 <span style="text-decoration:line-through;color:var(--color-text-secondary);font-size:11px;margin-left:4px">1,850</span></span>
+              <div class="product-card__colors">
+                <div class="product-card__color-dot" style="background:#C4A3E8"></div>
+                <div class="product-card__color-dot" style="background:#FFB6C1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card reveal" data-category="new">
+          <div class="product-card__image">
+            <span class="product-card__badge" style="background:#0A0A0A">New</span>
+            <img src="images/WhatsApp Image 2026-06-25 at 4.10.15 PM (3).jpeg" alt="Dream Big Tee - Oatmeal tee with bear and rainbow" loading="lazy">
+            <div class="product-card__quick-add">Quick Add →</div>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__title">Dream Big Tee</div>
+            <div class="product-card__meta">
+              <span class="product-card__price">PKR 1,750</span>
+              <div class="product-card__colors">
+                <div class="product-card__color-dot" style="background:#F0EAD6"></div>
+                <div class="product-card__color-dot" style="background:#FFF8DC"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card reveal reveal-delay-1" data-category="bestseller">
+          <div class="product-card__image">
+            <span class="product-card__badge">Bestseller</span>
+            <img src="images/WhatsApp Image 2026-06-25 at 4.10.14 PM.jpeg" alt="Goal Rush Tee - White tee with soccer ball graphic" loading="lazy">
+            <div class="product-card__quick-add">Quick Add →</div>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__title">Goal Rush Tee</div>
+            <div class="product-card__meta">
+              <span class="product-card__price">PKR 1,550</span>
+              <div class="product-card__colors">
+                <div class="product-card__color-dot" style="background:#FFFFFF; border-color:#ccc"></div>
+                <div class="product-card__color-dot" style="background:#2C2C2C"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card reveal reveal-delay-2" data-category="new">
+          <div class="product-card__image">
+            <img src="images/WhatsApp Image 2026-06-25 at 4.10.15 PM.jpeg" alt="Fly High Tee - Black tee with airplane typography" loading="lazy">
+            <div class="product-card__quick-add">Quick Add →</div>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__title">Fly High Tee</div>
+            <div class="product-card__meta">
+              <span class="product-card__price">PKR 1,650</span>
+              <div class="product-card__colors">
+                <div class="product-card__color-dot" style="background:#1A1A1A"></div>
+                <div class="product-card__color-dot" style="background:#F5F4F0"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card reveal reveal-delay-3" data-category="sale">
+          <div class="product-card__image">
+            <span class="product-card__badge" style="background:#6B1E1E">-15%</span>
+            <img src="images/WhatsApp Image 2026-06-25 at 4.10.14 PM (2).jpeg" alt="Jet Set Tee - Dark grey tee with airplane design" loading="lazy">
+            <div class="product-card__quick-add">Quick Add →</div>
+          </div>
+          <div class="product-card__info">
+            <div class="product-card__title">Jet Set Tee</div>
+            <div class="product-card__meta">
+              <span class="product-card__price">PKR 1,400 <span style="text-decoration:line-through;color:var(--color-text-secondary);font-size:11px;margin-left:4px">1,650</span></span>
+              <div class="product-card__colors">
+                <div class="product-card__color-dot" style="background:#3C3C3C"></div>
+                <div class="product-card__color-dot" style="background:#4A5568"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View All -->
+      <div style="text-align:center; margin-top:48px;" class="reveal">
+        <a href="#" class="btn btn-primary" style="background: var(--color-surface);">
+          View All Designs
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SECOND MARQUEE ======== -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track" style="animation-direction: reverse;">
+      <div class="marquee-item">
+        <span>Comfort First</span><div class="dot"></div>
+        <span>Statement Pieces</span><div class="dot"></div>
+        <span>Little Mischief PK</span><div class="dot"></div>
+        <span>Free Expression</span><div class="dot"></div>
+        <span>Born to Play</span><div class="dot"></div>
+        <span>Premium Quality</span><div class="dot"></div>
+        <span>Locally Made</span><div class="dot"></div>
+        <span>Unbox Joy</span><div class="dot"></div>
+      </div>
+      <div class="marquee-item">
+        <span>Comfort First</span><div class="dot"></div>
+        <span>Statement Pieces</span><div class="dot"></div>
+        <span>Little Mischief PK</span><div class="dot"></div>
+        <span>Free Expression</span><div class="dot"></div>
+        <span>Born to Play</span><div class="dot"></div>
+        <span>Premium Quality</span><div class="dot"></div>
+        <span>Locally Made</span><div class="dot"></div>
+        <span>Unbox Joy</span><div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== FEATURE / STORY BANNER ======== -->
+  <section class="feature-banner" id="story">
+    <div class="feature-banner__bg-text" aria-hidden="true">شرارتی</div>
+    <div class="container">
+      <div class="feature-banner__content">
+        <div class="feature-banner__text reveal">
+          <div class="feature-banner__tag">// The Mischief Makers</div>
+          <h2 class="feature-banner__title">
+            Not Just<br>A T-Shirt.<br><span style="color:var(--color-primary)">A Personality.</span>
+          </h2>
+          <p class="feature-banner__desc">
+            Born in Lahore, Little Mischief is for the kid who draws on walls, names every stray cat, and asks "why?" fourteen times before breakfast. We design graphic tees that celebrate wild imaginations and tiny rebellions. Every print tells a story. Every fabric is playground-tested.
+          </p>
+          <a href="#products" class="btn btn-primary">
+            Explore the Range
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+        <div class="feature-banner__image reveal reveal-delay-2">
+          <img src="images/WhatsApp Image 2026-06-25 at 4.10.15 PM (1).jpeg" alt="Little Mischief Kenzo-style oversized black tee" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SOCIAL PROOF / REVIEWS ======== -->
+  <section class="social-proof" id="reviews">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:48px;">
+        <div class="section-header__left">
+          <div class="section-tag">// Real Parents, Real Talk</div>
+          <h2 class="section-title" style="color:var(--color-surface)">Word On<br>The Street</h2>
+        </div>
+      </div>
+
+      <div class="social-proof__grid reveal">
+        <div class="social-proof__card">
+          <div class="social-proof__stars">★★★★★</div>
+          <p class="social-proof__quote">"My son refuses to wear anything else now. The duck tee is his second skin. Washes beautifully after 30+ cycles."</p>
+          <span class="social-proof__author">— Ayesha M. &bull; Lahore</span>
+        </div>
+        <div class="social-proof__card">
+          <div class="social-proof__stars">★★★★★</div>
+          <p class="social-proof__quote">"Finally a local brand that gets kids' fashion. Bold prints, soft cotton, and prices that don't make you wince. Ordered 4 more."</p>
+          <span class="social-proof__author">— Faisal K. &bull; Islamabad</span>
+        </div>
+        <div class="social-proof__card">
+          <div class="social-proof__stars">★★★★★</div>
+          <p class="social-proof__quote">"The animal tee was a birthday hit — every kid at the party wanted one. True to size and the green color is gorgeous."</p>
+          <span class="social-proof__author">— Sana R. &bull; Karachi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== NEWSLETTER ======== -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter__inner">
+        <div class="newsletter__text">
+          <h3>Join The Mischief Club</h3>
+          <p>Early access to drops, secret discounts & parenting wins.</p>
+        </div>
+        <form class="newsletter__form" id="newsletter-form" aria-label="Newsletter signup">
+          <input type="email" class="newsletter__input" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="newsletter__submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div>
+          <div class="footer__brand-name">Little <span>Mischief</span></div>
+          <p class="footer__brand-desc">
+            Bold graphic tees designed for tiny humans with big personalities. Proudly crafted in Pakistan.
+          </p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <div class="footer__column-title">Shop</div>
+          <div class="footer__column-links">
+            <a href="#">New Arrivals</a>
+            <a href="#">Bestsellers</a>
+            <a href="#">Boys Collection</a>
+            <a href="#">Girls Collection</a>
+            <a href="#">Sale</a>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <div class="footer__column-title">Info</div>
+          <div class="footer__column-links">
+            <a href="#">About Us</a>
+            <a href="#">Size Guide</a>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Track Order</a>
+            <a href="#">FAQs</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <div class="footer__column-title">Reach Out</div>
+          <div class="footer__column-links">
+            <a href="#">hello@littlemischief.pk</a>
+            <a href="#">+92 321 456 7890</a>
+            <a href="#">WhatsApp Us</a>
+            <a href="#">Lahore, Pakistan</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2025 Little Mischief PK. All rights reserved.</span>
+        <div class="footer__payment-icons">
+          <span class="footer__payment-icon">JazzCash</span>
+          <span class="footer__payment-icon">EasyPaisa</span>
+          <span class="footer__payment-icon">COD</span>
+          <span class="footer__payment-icon">Bank</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== WHATSAPP CTA ======== -->
+  <a href="https://wa.me/923214567890" class="whatsapp-cta" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ======== JAVASCRIPT ======== -->
+  <script src="index.js"></script>
+</body>
+</html>
